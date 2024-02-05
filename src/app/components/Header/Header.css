@@ -1,0 +1,179 @@
+.nav-parent,.nav-parent-mobile {
+  background-color: transparent;
+  width: 100% !important;
+  height: 64px !important;
+  border-radius: 22px !important;
+  z-index: 4444;
+  position: relative;
+}
+.nav-parent::before ,.nav-parent-mobile::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px solid rgba(206, 206, 251, 0.12) !important;
+  background-color: #cecefb !important;
+  border-radius: 22px !important;
+  opacity: 12%;
+  z-index: 0;
+}
+
+.nav-parent li {
+  font-family: 'Inter V' !important;
+  font-size: 14px !important;
+  line-height: 20px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0em !important;
+  text-align: center !important;
+  border-radius: 12px !important;
+  padding: 12px 24px !important;
+  color: rgba(203, 203, 232, 1) !important;
+}
+
+@media (max-width:1200px) {
+  .nav-parent li{
+  font-size: 12px !important;
+  }
+  
+}
+
+
+
+header {
+  padding: 0 !important;
+}
+ul {
+  gap: 0 !important;
+}
+@media (max-width:1200px) {
+    header {
+        padding: 0 10px !important;
+      }
+}
+.gap-4 {
+    gap: 0 !important;
+}
+.intersect {
+  
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.lights {
+  
+  position: absolute;
+  top: -1105px;
+left: -579px;
+}
+.Galaxy {
+  z-index: 0;
+  position: absolute;
+  top: -283px;
+left: 2px;
+}
+.one {
+  
+  position: absolute;
+  top: 7.56402587890625px;
+left: 11.824615478515625px;
+}
+
+.vector4 {
+    background: radial-gradient(40.63% 47.31% at 69.23% 53.25%, rgba(209, 24, 255, 0.05) 0%, rgba(108, 38, 255, 0.05) 50%, rgba(14, 3, 28, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  position: absolute;
+  opacity: 0.9;
+  top: -50px;
+ left: -320px;
+mix-blend-mode: screen;
+
+}
+.vector5 {
+    background: radial-gradient(38.32% 52.12% at 35% 71.1%, rgba(152, 88, 255, 0.12) 0%, rgba(14, 3, 28, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  position: absolute;
+  opacity: 0.2;
+
+top: 69px;
+left: 840px;
+mix-blend-mode: screen;
+
+
+}
+.nav-link {
+  transition: all 0.5s ease-out;
+}
+.nav-links{
+  position: relative;
+  z-index: 9999;
+}
+.nav-link:hover ,.mobile-links a:hover {
+  border-radius: 12px;
+  text-shadow: 0px 0px 4px 0px #ffffff80;
+  background: #ffffff1a;
+}
+.nav-link:hover a  ,.mobile-links a:hover  {
+  color: #ffffff;
+  text-shadow: 0px 0px 4px 0px #ffffff80;
+  font-family: 'Inter V';
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0em;
+  
+}
+@media (max-width:1050px) {
+    .desktop-nav{
+      display: none;
+
+    }
+}
+@media (min-width:1050px) {
+    .mobile-nav ,.mobile-links{
+        display: none;
+    }
+    
+}
+.filter{
+  display: block;
+}
+.burger{
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+}
+.burger:hover .filter{
+  display: none;
+}
+.mobile-links{
+  position: fixed;
+  width: 100%;
+  z-index: 3333;
+  height: fit-content;
+  background: rgba(14, 3, 28, 1);
+  padding-top: 100px;
+  transform: translateY(-100%);
+transition: all 0.5s ease-out;
+}
+.mobile-links.active{
+  transform: translateY(0);
+
+}
+
+
+.mobile-links a{
+  color: rgba(203, 203, 232, 1);
+  font-family: 'Inter V';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: center;
+  border-bottom: 1px solid rgba(206, 206, 251, 0.12);
+padding: 12px;
+border: 0px 0px 1px 0px;
+width: 100%;
+text-align: left;
+}
+.mobile-links a:last-child{
+  border-bottom: none;
+}
